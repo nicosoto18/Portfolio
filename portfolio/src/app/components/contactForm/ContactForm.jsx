@@ -74,13 +74,13 @@ const ContactForm = () => {
     return (
         <div className="mb-6">
             <h2 className="text-Dark-orange-personal underline underline-offset-4">Contactame</h2>
-            <p className="mt-4 lg:text-xl">Si estás interesado en mi perfil, ponte en contacto conmigo</p>
+            <p className="mt-4 lg:text-lg">Si estás interesado en mi perfil, ponte en contacto conmigo</p>
             
             {
                 !loading && 
                 <form 
                     action="formulario" 
-                    className="w-full lg:w-[80%] mx-auto mt-6 lg:mt-12 lg:flex lg:flex-wrap "
+                    className="w-full lg:w-[80%] mx-auto mt-6 lg:mt-12 lg:flex lg:flex-wrap"
                     onSubmit={handleSubmit}
                     ref={refForm}
                     autoComplete="off"

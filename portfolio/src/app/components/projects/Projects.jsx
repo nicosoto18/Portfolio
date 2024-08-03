@@ -22,12 +22,11 @@ const Projects = () => {
     return (
         <div>
             <h2 className="text-Dark-orange-personal underline underline-offset-4">Proyectos</h2>
-            <p className="mt-4 lg:text-xl">Aquí hay algunos de mis proyectos, puedes verlos todos en mi Github </p>
+            <p className="mt-4 lg:text-lg">Aquí hay algunos de mis proyectos, puedes verlos todos en mi Github </p>
             <section>
                 <h3 className="underline underline-offset-4 mt-8 text-[#F5F5DC]">{AllProjects[currentIndex].title}</h3>
                 <div className="flex flex-col lg:flex-row mt-6">
-                    <div className="lg:w-[40%] bg-[#CCCCCC] rounded-xl order-1 lg:order-none">
-                        <div className="p-2">
+                    <div className="lg:w-[40%] bg-[#CCCCCC] rounded-xl order-1 lg:order-none p-2 flex flex-col justify-center">
                             <Image
                                 src={AllProjects[currentIndex].photo}
                                 alt="photo"
@@ -47,9 +46,9 @@ const Projects = () => {
                                     Repositorio
                                 </button>
                             </div>
-                        </div>
+                       
                     </div>
-                    <div className="lg:w-[59%] px-3 mt-6 ml-auto lg:mt-0 order-3 lg:order-none">
+                    <div className="lg:w-[59%] px-3 mt-6 ml-auto lg:mt-0 order-3 lg:order-none text-sm">
                         {AllProjects[currentIndex].description}
                     </div>
                 </div>

@@ -12,7 +12,8 @@ module.exports = {
       'Personal-Blue' : '#001F3F',
       'Light-personal-Gray' : '#D9D9D9',
       'Dark-personal-Gray' : '#696969',
-      'Dark-orange-personal': '#FF4500',
+      'Medium-personal-Gray' : '#A1A1A1',
+      'Dark-orange-personal': '#FF4E0C',
      }
     },
   },

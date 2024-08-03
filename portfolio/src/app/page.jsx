@@ -95,16 +95,16 @@ export default function Home() {
                 </section>
 
                 <section className="w-[95%] lg:w-[80%] mx-auto">
-                    <section className="pt-16 lg:mt-[4rem]" ref={aboutRef} id="about">
+                    <section className="pt-32 lg:mt-[5rem] lg:pt-0" ref={aboutRef} id="about">
                         <AboutMe />
                     </section>
-                    <section className="pt-14 lg:mt-[4rem]" ref={projectsRef} id="projects">
+                    <section className="pt-16 lg:mt-[5rem] lg:pt-0" ref={projectsRef} id="projects">
                         <Projects />
                     </section>
-                    <section className="pt-14 lg:mt-[4rem]" ref={skillsRef} id="skills">
+                    <section className="pt-16 lg:mt-[5rem] lg:pt-0" ref={skillsRef} id="skills">
                         <Skills />
                     </section>
-                    <section className="pt-14 lg:mt-[4rem]" ref={contactRef} id="contact">
+                    <section className="pt-16 lg:mt-[5rem] lg:pt-0" ref={contactRef} id="contact">
                         <ContactForm />
                     </section>
                 </section>

@@ -29,10 +29,10 @@ const Banner = () => {
         <div className="flex flex-col lg:flex-row justify-center items-center">
             <div className=" w-full lg:w-1/2 mt-1 lg:mt-0 text-center flex flex-col justify-center items-center order-2 lg:order-none">
                 <h1>Axel Nicolás Soto</h1>
-                <h2>Full-Stack Developer</h2>
+                <h2 className="text-xl text-Medium-personal-Gray lg:text-2xl">Full-Stack Developer</h2>
                 <div className="flex justify-center mt-6">
                     <button
-                        className="bg-Light-personal-Gray text-Personal-Blue px-3 rounded-2xl mr-4"
+                        className="bg-Light-personal-Gray text-Personal-Blue font-semibold px-3 rounded-2xl mr-4"
                         onClick={() => window.location.href = cvUrl}
                     >
                         Ver Curriculum Vitae
@@ -46,7 +46,7 @@ const Banner = () => {
                 </div>
                 <div className="mt-7 flex relative">
                     <div
-                        className="bg-Light-personal-Gray text-Personal-Blue px-3 rounded-2xl mr-3 flex items-center">
+                        className="bg-Personal-Blue text-Light-personal-Gray font-semibold px-3 rounded-2xl mr-2 flex items-center">
                         nicosoto18@hotmail.com
                     </div>
                     <button className="mr-3" onClick={() => copyToClipboard('nicosoto18@hotmail.com')}>

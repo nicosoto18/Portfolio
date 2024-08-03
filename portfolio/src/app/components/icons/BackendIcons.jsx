@@ -3,8 +3,8 @@ export const Node = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="icon icon-tabler icon-tabler-brand-nodejs"
-      width="44"
-      height="44"
+      width="42"
+      height="42"
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke="#8CC84B"
@@ -22,12 +22,12 @@ export const Node = () => {
 export const Express = () => {
   return (
     <div className="flex items-center">
-      <p className="mr-1 text-[#8C8C8C]">Express</p>
+      <p className="mr-1 text-[#8C8C8C] text-sm">Express</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="icon icon-tabler icon-tabler-brand-nodejs"
-        width="44"
-        height="44"
+        width="42"
+        height="42"
         viewBox="0 0 24 24"
         strokeWidth="1.5"
         stroke="#8C8C8C"
@@ -49,8 +49,8 @@ export const PostgreSql = () => {
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
-      width="44"
-      height="44"
+      width="42"
+      height="42"
       viewBox="0 0 48 48"
     >
       <path
@@ -79,8 +79,8 @@ export const SqlServer = () => {
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
-      width="44"
-      height="44"
+      width="42"
+      height="42"
       viewBox="0 0 48 48"
     >
       <path
@@ -125,7 +125,7 @@ export const SqlServer = () => {
 
 export const Sequelize = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width={44} height={44}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width={42} height={42}>
       <path
         fill="#2f406a"
         d="M101.84 41.72V86l-37.66 22.32-.34.31v16.57l.34.32 53-30.64V33.12l-.5-.12-15 8.36.08.36"
