@@ -44,10 +44,10 @@ const Skills = () => {
             <div className="lg:flex lg:justify-between">
                 <section className="bg-[#000000] lg:w-[45%] lg:h-[25rem] text-center rounded-2xl mt-6 p-3">
                     <h2 className="h-[3rem] bg-black">Frontend</h2>
-                    <div className="h-[21.5rem] grid grid-cols-3 grid-rows-3 rounded-2xl">
+                    <div className="h-[21.2rem] grid grid-cols-3 grid-rows-3 rounded-2xl">
                         {iconsFrontend.map((skill,index) => (
                             <div 
-                            className="flex flex-col justify-center items-center text-Light-personal-Gray text-sm"
+                            className="flex flex-col justify-center items-center text-Light-personal-Gray text-base"
                             key={index}
                             >
                                 {skill.icon}
@@ -58,10 +58,10 @@ const Skills = () => {
                 </section>
                 <section className="bg-[#000000] lg:w-[45%] h-[20rem] lg:h-[25rem] text-center rounded-2xl mt-6 p-3">
                     <h2 className="h-[3rem]">Backend</h2>
-                    <div className="h-[21.5rem] grid grid-cols-3 grid-rows-3 rounded-2xl">
+                    <div className="h-[21.2rem] grid grid-cols-3 grid-rows-3 rounded-2xl">
                         {iconsBackend.map((skill, index) => (
                             <div 
-                            className="flex flex-col justify-center items-center text-Light-personal-Gray text-sm"
+                            className="flex flex-col justify-center items-center text-Light-personal-Gray text-base"
                             key={index}
                             >
                                 {skill.icon}
@@ -74,10 +74,10 @@ const Skills = () => {
             <div className="lg:flex lg:justify-between">
                 <section className="bg-[#000000] lg:w-[45%] h-[20rem] lg:h-[25rem] text-center rounded-2xl mt-6 p-3">
                     <h2 className="h-[3rem]">Herramientas</h2>
-                    <div className="h-[21.5rem] grid grid-cols-3 grid-rows-3 rounded-2xl">
+                    <div className="h-[21.2rem] grid grid-cols-3 grid-rows-3 rounded-2xl">
                         {iconsTools.map((skill, index) => (
                             <div 
-                            className="flex flex-col justify-center items-center text-Light-personal-Gray text-sm"
+                            className="flex flex-col justify-center items-center text-Light-personal-Gray text-base"
                             key={index}
                             >
                                 {skill.icon}
@@ -88,10 +88,10 @@ const Skills = () => {
                 </section>
                 <section className="bg-[#000000] lg:w-[45%] h-[12rem] lg:h-[25rem] text-center rounded-2xl mt-6 p-3">
                     <h2 className="h-[3rem]">Aprendiendo</h2>
-                    <div className="h-[21.5rem] grid grid-cols-3 grid-rows-3 rounded-2xl">
+                    <div className="h-[21.2rem] grid grid-cols-3 grid-rows-3 rounded-2xl">
                         {iconsLearning.map((skill,index) => (
                             <div 
-                            className="flex flex-col justify-center items-center text-Light-personal-Gray text-sm"
+                            className="flex flex-col justify-center items-center text-Light-personal-Gray text-base"
                             key={index}
                             >
                                 {skill.icon}
