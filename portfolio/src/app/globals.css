@@ -54,6 +54,18 @@ h3{
   font-weight: 500;
 }
 
+.textoPeq{
+  font-size: 14px;
+}
+
+.textoNormal{
+  font-size: 16px;
+}
+
+.textoMedianoG{
+  font-size: 18px;
+}
+
 .filterImg{
   background: linear-gradient(to top, #000000 1%, #D9D9D9 100%);
     filter: brightness(100%) contrast(120%);

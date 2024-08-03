@@ -22,7 +22,7 @@ const Projects = () => {
     return (
         <div>
             <h2 className="text-Dark-orange-personal underline underline-offset-4">Proyectos</h2>
-            <p className="mt-4 lg:text-lg">Aquí hay algunos de mis proyectos, puedes verlos todos en mi Github </p>
+            <p className="mt-4 textoMedianoG">Aquí hay algunos de mis proyectos, puedes verlos todos en mi Github </p>
             <section>
                 <h3 className="underline underline-offset-4 mt-8 text-[#F5F5DC]">{AllProjects[currentIndex].title}</h3>
                 <div className="flex flex-col lg:flex-row mt-6">
@@ -48,7 +48,7 @@ const Projects = () => {
                             </div>
                        
                     </div>
-                    <div className="lg:w-[59%] px-3 mt-6 ml-auto lg:mt-0 order-3 lg:order-none text-sm">
+                    <div className="lg:w-[59%] px-3 mt-6 ml-auto lg:mt-0 order-3 lg:order-none textoPeq">
                         {AllProjects[currentIndex].description}
                     </div>
                 </div>

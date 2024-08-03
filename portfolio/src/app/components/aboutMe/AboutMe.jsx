@@ -13,7 +13,7 @@ const AboutMe = () => {
                         objectFit="cover"
                     />
                 </div>
-                <div className="lg:w-[70%] flex flex-col items-center justify-center text-base">
+                <div className="lg:w-[70%] flex flex-col items-center justify-center textoNormal">
                     <p className="mt-3 lg:mt-0">
                         ¡Hola! Soy Nicolás, un apasionado desarrollador Full-Stack con orientacion en frontend.
                         Soy una persona altamente dedicada y comprometida con las tareas que emprendo.

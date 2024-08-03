@@ -74,7 +74,7 @@ const ContactForm = () => {
     return (
         <div className="mb-6">
             <h2 className="text-Dark-orange-personal underline underline-offset-4">Contactame</h2>
-            <p className="mt-4 lg:text-lg">Si estás interesado en mi perfil, ponte en contacto conmigo</p>
+            <p className="mt-4 textoMedianoG">Si estás interesado en mi perfil, ponte en contacto conmigo</p>
             
             {
                 !loading && 
