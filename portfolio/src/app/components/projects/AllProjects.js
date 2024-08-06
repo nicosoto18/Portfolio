@@ -6,7 +6,7 @@ const AllProjects = [
     {
         id:1,
         title: "PawBnb",
-        linkDemo: "https://pi-countries-frontend-one.vercel.app/",
+        linkDemo: "https://pawbnb.vercel.app/",
         linkRepo: "https://github.com/jOsterrielt/pawbnb",
         photo: LandingCapture,
         description: (
