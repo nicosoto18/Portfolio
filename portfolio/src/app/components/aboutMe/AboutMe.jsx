@@ -1,4 +1,4 @@
-import Caricature from "../../../../public/Imagenes/CaricatureFine.png"
+import Caricature from "../../../../public/Imagenes/Caricature.png"
 import Image from "next/image";
 
 const AboutMe = () => {
