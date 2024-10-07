@@ -1,19 +1,20 @@
-import Caricature from "../../../../public/Imagenes/Caricature.png"
+import Caricature from "../../../../public/Imagenes/CaricatureFine.png"
 import Image from "next/image";
 
 const AboutMe = () => {
     return (
         <div>
-            <h2 className="text-Dark-orange-personal underline underline-offset-4">Sobre mi</h2>
+            <h3 className="text-Dark-orange-personal underlineDecoration">Sobre mi</h3>
             <div className="lg:flex mt-8">
-                <div className="w-[50%] lg:w-[30%] mx-auto flex items-center">
+                <div className="w-[20%] lg:w-[10%] mx-auto lg:ml-4 lg:mr-auto flex items-center">
                     <Image
                         src={Caricature}
                         alt="caricature"
                         objectFit="cover"
+                        className=""
                     />
                 </div>
-                <div className="lg:w-[70%] flex flex-col items-center justify-center text-lg">
+                <div className="lg:w-[80%] flex flex-col text-left justify-center text-medium">
                     <p className="mt-3 lg:mt-0">
                         ¡Hola! Soy Nicolás, un apasionado desarrollador Full-Stack con orientacion en frontend.
                         Soy una persona altamente dedicada y comprometida con las tareas que emprendo.

@@ -3,8 +3,8 @@ export const Books = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="icon icon-tabler icon-tabler-books"
-      width="42"
-      height="42"
+      width="38"
+      height="38"
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke=" #00247D"
@@ -29,8 +29,8 @@ export const Python = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="icon icon-tabler icon-tabler-brand-python"
-      width="42"
-      height="42"
+      width="38"
+      height="38"
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke="#306998"

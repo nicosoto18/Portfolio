@@ -73,14 +73,14 @@ const ContactForm = () => {
 
     return (
         <div className="mb-6">
-            <h2 className="text-Dark-orange-personal underline underline-offset-4">Contactame</h2>
-            <p className="mt-4 text-lg">Si estás interesado en mi perfil, ponte en contacto conmigo</p>
+            <h3 className="text-Dark-orange-personal underlineDecoration">Contactame</h3>
+            <p className="mt-4 text-medium lg:ml-4">Si estás interesado en mi perfil, ponte en contacto conmigo</p>
             
             {
                 !loading && 
                 <form 
                     action="formulario" 
-                    className="w-full lg:w-[80%] mx-auto mt-6 lg:mt-12 lg:flex lg:flex-wrap"
+                    className="w-full mx-auto mt-6 lg:mt-8 lg:flex lg:flex-wrap lg:ml-4"
                     onSubmit={handleSubmit}
                     ref={refForm}
                     autoComplete="off"
@@ -95,7 +95,7 @@ const ContactForm = () => {
                             onBlur={handleBlur}
                             value={userData.username}
                         />
-                        <div className="text-sm my-auto ml-1 text-red-400 mt-1">
+                        <div className="text-xs my-auto ml-1 text-red-400 mt-1">
                         {touched.username && errors.n1 && <p>{errors.n1}</p>}
                         {touched.username && errors.n2 && <p>{errors.n2}</p>}
                         </div>
@@ -111,7 +111,7 @@ const ContactForm = () => {
                             onBlur={handleBlur}
                             value={userData.email}
                         />
-                        <div className="text-sm my-auto ml-1 text-red-400 mt-1">
+                        <div className="text-xs my-auto ml-1 text-red-400 mt-1">
                             {touched.email && errors.e1 && <p>{errors.e1}</p>}
                             {touched.email && errors.e2 && <p>{errors.e2}</p>}
                             {touched.email && errors.e3 && <p>{errors.e3}</p>} 
@@ -131,7 +131,7 @@ const ContactForm = () => {
                             value={userData.message}
                         >
                         </textarea>
-                        <div className="text-sm my-auto ml-1 text-red-400 mt-1">
+                        <div className="text-xs my-auto ml-1 text-red-400 mt-1">
                             {touched.message && errors.m1 && <p>{errors.m1}</p>}
                             {touched.message && errors.m2 && <p>{errors.m2}</p>}
                         </div>

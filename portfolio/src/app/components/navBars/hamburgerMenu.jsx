@@ -1,7 +1,7 @@
 import Image from "next/image";
 import PersonalLogo from "../../../../public/Imagenes/LogoPersonal.png";
 import { useEffect, useRef, useState } from "react";
-import PhotoOfPresentation from "../../../../public/Imagenes/PhotoOfPresentation.png"
+import PhotoOfPresentation from "../../../../public/Imagenes/PhotoOfPresentationNew.png"
 
 const HamburgerMenu = ({ scrollToSection, sectionsRef, activeSection }) => {
 
@@ -22,12 +22,12 @@ const HamburgerMenu = ({ scrollToSection, sectionsRef, activeSection }) => {
 
   return (
     <div ref={menuRef}>
-      <div className="w-full h-20 border-b-[1px] border-b-Dark-personal-Gray flex items-center fixed bg-Personal-Blue z-50">
+      <div className="w-full h-20 border-b-[1px] border-b-[#2E2E2E] flex items-center fixed bg-black z-50">
         <div className="w-[90%] h-[85%] mx-auto flex">
           <Image
             src={PersonalLogo}
-            width={200}
-            height={200}
+            width={130}
+            height={130}
             alt="Logo personal"
             className="my-auto p-2 "
           />

@@ -1,8 +1,8 @@
-const SendIcon=()=>{
+const SendIcon=({size})=>{
     return(
         <svg xmlns="http://www.w3.org/2000/svg" 
-        width="18" 
-        height="18" 
+        width={size} 
+        height={size} 
         fill="currentColor" 
         className="bi bi-send-fill" 
         viewBox="0 0 16 16">

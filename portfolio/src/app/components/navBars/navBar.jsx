@@ -5,14 +5,16 @@ const NavBar = ({ scrollToSection, sectionsRef, activeSection }) => {
 
   return (
 
-    <div className="w-full h-16 border-b-[1px] border-b-Dark-personal-Gray py-1 flex items-center fixed top-0 z-30 bg-Personal-Blue">
-      <div className="w-[90%] h-[85%] flex mx-auto ">
-        <div className="mr-auto my-auto flex ">
+    <div className="w-full h-16 border-b-[1px] border-b-[#2E2E2E] py-1 flex items-center fixed top-0 z-30 bg-black">
+      <div className="w-[90%] h-[85%] flex mx-auto">
+
+        <div className="mr-auto flex h-full">
           <Image
             src={PersonalLoogo}
             alt="Logo personal"
-            width={180}
-            height={180}
+            height={99}
+            width={102}
+            className="object-cover"
           />
         </div>
 

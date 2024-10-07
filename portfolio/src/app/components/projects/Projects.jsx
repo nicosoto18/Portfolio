@@ -1,75 +1,39 @@
 import Image from "next/image";
 import AllProjects from "./AllProjects";
-import { useState } from "react";
 
 const Projects = () => {
 
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const totalProjects = 3
-
-    const handleNext = () => {
-        if (currentIndex < AllProjects.length - 1) {
-            setCurrentIndex(currentIndex + 1)
-        }
-    };
-
-    const handlePrevious = () => {
-        if (currentIndex > 0) {
-            setCurrentIndex(currentIndex - 1)
-        }
-    }
-
     return (
         <div>
-            <h2 className="text-Dark-orange-personal underline underline-offset-4">Proyectos</h2>
-            <p className="mt-4 text-lg">Aquí hay algunos de mis proyectos, puedes verlos todos en mi Github </p>
-            <section>
-                <h3 className="underline underline-offset-4 mt-8 text-[#F5F5DC]">{AllProjects[currentIndex].title}</h3>
-                <div className="flex flex-col lg:flex-row mt-6">
-                    <div className="lg:w-[40%] bg-[#CCCCCC] rounded-xl order-1 lg:order-none p-2 flex flex-col justify-center">
+            <h3 className="text-Dark-orange-personal underlineDecoration">Proyectos</h3>
+            <p className="mt-4 text-medium lg:ml-4">Aquí hay algunos de mis proyectos, puedes verlos todos en mi Github</p>
+            <section className="lg:flex justify-around">
+                {
+                    AllProjects.map((project, index) => (
+                        <div
+                            key={index}
+                            className="lg:w-[30%] bg-[#000000] mb-10 flex flex-col mt-8 rounded-md shadow shadow-Light-personal-Gray p-1 cursor-pointer hover:shadow-md hover:shadow-Light-personal-Gray"
+                        >
                             <Image
-                                src={AllProjects[currentIndex].photo}
-                                alt="photo"
-                                className="rounded-xl"
+                                src={project.photo}
+                                layout = "responsive"
+                                widt={500}
+                                height={500}
+                                alt={`Imagen de ${project.title}`}
                             />
-                            <div className="flex mt-4 justify-between">
-                                <button
-                                    className="button1 w-[47%]"
-                                    onClick={()=>window.location.href=AllProjects[currentIndex].linkDemo}
-                                >
-                                    Demo
-                                </button>
-                                <button
-                                    className="button1 w-[47%]"
-                                    onClick={()=>window.location.href = AllProjects[currentIndex].linkRepo}
-                                >
-                                    Repositorio
-                                </button>
+                            <div className="pt-3 pb-8 px-2">
+                                <h5 className="text-center font-bold ">{project.title}</h5>
+                                <div className="text-sm mt-2">{project.description}</div>
+                                <div className="flex justify-around mt-3">
+                                    <button className="button4" onClick={() => window.location.href = project.linkDemo}>Sitio web</button>
+                                    <button className="button4" onClick={() => window.location.href = project.linkRepo}>Repositorio</button>
+                                </div>
                             </div>
-                       
-                    </div>
-                    <div className="lg:w-[59%] px-3 mt-6 ml-auto lg:mt-0 order-3 lg:order-none text-base">
-                        {AllProjects[currentIndex].description}
-                    </div>
-                </div>
-                <div className="flex justify-center items-center mt-4 lg:mt-7 order-2 lg:order-none">
-                    <button
-                        className="button2 w-28 lg:w-[18%]"
-                        onClick={handlePrevious}
-                        disabled={currentIndex === 0}
-                    >
-                        Anterior
-                    </button>
-                    <p className="text-[#F5F5DC] mx-4">{currentIndex + 1} de  {totalProjects}</p>
-                    <button
-                        className="button2 w-28 lg:w-[18%]"
-                        onClick={handleNext}
-                        disabled={currentIndex === AllProjects.length - 1}
-                    >
-                        Siguiente
-                    </button>
-                </div>
+                        </div>
+                    ))
+                }
             </section>
+
         </div>
     )
 }

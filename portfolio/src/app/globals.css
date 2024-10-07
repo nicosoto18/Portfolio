@@ -17,7 +17,7 @@
 }
 
 body {
- background-color: #001F3F;
+ background-color: #000000;
  color: #D9D9D9;
 
 }
@@ -40,6 +40,7 @@ body {
   }
 } 
 
+
 h1{
   font-size: 3em;
   font-weight: 600;
@@ -49,13 +50,13 @@ h2{
   font-size: 2em;
   font-weight: 600;
 }
+
 h3{
   font-size: 1.6em;
   font-weight: 500;
 }
 
 .filterImg{
-  background: linear-gradient(to top, #000000 1%, #D9D9D9 100%);
     filter: brightness(100%) contrast(120%);
 }
 
@@ -90,8 +91,21 @@ h3{
   background-color: #CC3700;
 }
 
+.button4{
+  background-color: #333333;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 2px solid #D9D9D9;
+}
+
+.button4:hover{
+  background-color: #FF4E0C;
+}
+
 .inputForm{
-  background-color: #304656 !important;
+  background-color: #444444!important;
   border-radius: 0.5rem;
   padding: 0.35rem;
   color: #D9D9D9 !important;
@@ -106,7 +120,42 @@ h3{
 
 .inputForm:focus{
   outline: none;
-  border: 1px solid #696969;
+  border: 1px solid #D9D9D9;
+}
+
+.underlineDecoration {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1px;
+}
+
+.underlineDecoration::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #FF4E0C; /* Ajusta a tu color Dark Orange personal */
+  transform: scaleX(0);
+  transform-origin: center;
+  animation: underline-expand 2s ease-in-out infinite alternate;
+}
+
+.styleDiamond{
+  top: 50%;
+  left: 50%;
+  transform: translate(40%, 32%) rotate(45deg);
+}
+
+@keyframes underline-expand {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
 }
 
 
@@ -125,11 +174,11 @@ h3{
   }
 
   .button4{
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 15px;
     text-decoration:underline -2px;
     text-underline-offset: 4px;
 
   }
-  
+
 }

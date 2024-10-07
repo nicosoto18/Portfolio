@@ -7,7 +7,7 @@ const LocationIcon = () => {
       height="15"
       viewBox="0 0 24 24"
       strokeWidth="1.5"
-      stroke="#000000"
+      stroke="#D9D9D9"
       fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"

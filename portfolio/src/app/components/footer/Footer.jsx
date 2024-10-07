@@ -13,20 +13,20 @@ const Footer = ({scrollToSection, sectionsRef}) => {
     const subject = 'Consulta desde el portfolio'
 
     return (
-        <div className="w-full flex flex-col bg-[#000000] text-center mt-[5rem]">
+        <div className="w-full flex flex-col bg-[#444444] text-center mt-[5rem]">
 
             <div className="lg:w-1/2 mx-auto pt-8 px-8">
                 <h2 className="text-[#FFFFFF]">Nicolás Soto</h2>
-                <p className="lg:text-xl mt-2">Desarrollador web full stack con orientacion en desarrollo frontend</p>
+                <p className="lg:text-lg mt-2">Desarrollador web full stack </p>
                 <div className="lg:w-1/2 flex justify-around mt-5 items-center mx-auto">
                     <button onClick={() => window.location.href = linkedInUrl}>
-                        <LinkedinIcon />
+                        <LinkedinIcon size={24} />
                     </button>
                     <button onClick={() => window.location.href = githubUrl}>
-                        <GithubIcon />
+                        <GithubIcon size={24} />
                     </button>
                     <button onClick={() => window.location.href = instagramUrl}>
-                        <InstagramIcon />
+                        <InstagramIcon/>
                     </button>
                     <a href={`mailto:${email}?subject=${encodeURIComponent(subject)}`}>
                         <MailIcon />
@@ -75,11 +75,11 @@ const Footer = ({scrollToSection, sectionsRef}) => {
                     </div>
                 </div>
             </div>
-            <div className="bg-Light-personal-Gray w-full text-[#000000] mt-8 p-2 lg:flex lg:justify-around items-center">
+            <div className="bg-[#333333] w-full mt-8 p-2 lg:flex lg:justify-around items-center">
                 <p className="lg:mr-16">©2024 Nicolas Soto.</p>
                 <div className="mt-1 lg:mt-0 flex justify-center items-center">
-                    <LocationIcon />
-                    <p>Cosquín, Córdoba, Argentina</p>
+                    <LocationIcon/>
+                    <p className="ml-1">Cosquín, Córdoba, Argentina</p>
                 </div>
             </div>
 
