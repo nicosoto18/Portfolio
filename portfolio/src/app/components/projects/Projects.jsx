@@ -12,7 +12,7 @@ const Projects = () => {
                     AllProjects.map((project, index) => (
                         <div
                             key={index}
-                            className="lg:w-[30%] bg-[#000000] mb-10 flex flex-col mt-8 rounded-md shadow shadow-Light-personal-Gray p-1 cursor-pointer hover:shadow-md hover:shadow-Light-personal-Gray"
+                            className="lg:w-[30%] flex flex-col mt-8 rounded-md shadow shadow-Light-personal-Gray p-1 cursor-pointer hover:shadow-md hover:shadow-Light-personal-Gray"
                         >
                             <Image
                                 src={project.photo}

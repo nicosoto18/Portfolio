@@ -92,13 +92,13 @@ export default function Home() {
                     <section className="pt-32 lg:pt-20" ref={aboutRef} id="about">
                         <AboutMe />
                     </section>
-                    <section className="pt-16 lg:pt-20" ref={projectsRef} id="projects">
+                    <section className="pt-20" ref={projectsRef} id="projects">
                         <Projects />
                     </section>
-                    <section className="pt-16 lg:pt-20" ref={skillsRef} id="skills">
+                    <section className="pt-20" ref={skillsRef} id="skills">
                         <Skills />
                     </section>
-                    <section className="pt-16 lg:pt-20" ref={contactRef} id="contact">
+                    <section className="pt-20" ref={contactRef} id="contact">
                         <ContactForm />
                     </section>
                 </section>
