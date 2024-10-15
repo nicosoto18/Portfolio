@@ -123,6 +123,10 @@ h3{
   border: 1px solid #D9D9D9;
 }
 
+.inputForm:hover{
+  outline: 1px solid #D9D9D9
+}
+
 .underlineDecoration {
   position: relative;
   display: inline-block;

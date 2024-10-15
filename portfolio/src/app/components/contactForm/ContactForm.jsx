@@ -140,7 +140,7 @@ const ContactForm = () => {
                     <button 
                         type="submit" 
                         className="button3 w-full"
-                        disabled={Object.keys(errors).length > 0}
+                        disabled={Object.keys(errors).length > 0 || !userData.username || !userData.email || !userData.message}
                         >
                         Enviar
                     </button>

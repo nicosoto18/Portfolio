@@ -25,8 +25,8 @@ const Projects = () => {
                                 <h5 className="text-center font-bold ">{project.title}</h5>
                                 <div className="text-sm mt-2">{project.description}</div>
                                 <div className="flex justify-around mt-3">
-                                    <button className="button4" onClick={() => window.location.href = project.linkDemo}>Sitio web</button>
-                                    <button className="button4" onClick={() => window.location.href = project.linkRepo}>Repositorio</button>
+                                    <button className="button4" onClick={() => window.open(project.linkDemo)}>Sitio web</button>
+                                    <button className="button4" onClick={() => window.open(project.linkRepo)}>Repositorio</button>
                                 </div>
                             </div>
                         </div>

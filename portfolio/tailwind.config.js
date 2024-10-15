@@ -14,6 +14,10 @@ module.exports = {
       'Dark-personal-Gray' : '#696969',
       'Medium-personal-Gray' : '#A1A1A1',
       'Dark-orange-personal': '#FF4E0C',
+     },
+     boxShadow: {
+      'inner-md' : ' inset 0 2px 4px#FF4E0C',
+      'inner-hover' : 'inset 0 3px 5px #FF4E0C' 
      }
     },
   },

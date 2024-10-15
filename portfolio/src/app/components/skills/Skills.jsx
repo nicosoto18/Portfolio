@@ -43,7 +43,7 @@ const Skills = () => {
             <h3 className="text-Dark-orange-personal underlineDecoration">Habilidades</h3>
             <div className="lg:flex lg:justify-around">
                 
-                <section className="bg-[#000000] lg:w-[40%] lg:h-[24rem] text-center rounded-2xl mt-6 p-3 shadow-inner shadow-Dark-orange-personal">
+                <section className="bg-[#000000] lg:w-[40%] lg:h-[24rem] text-center rounded-2xl mt-6 p-3 shadow-inner-md hover:shadow-inner-hover">
                     <h3 className="h-[3rem] bg-black">Frontend</h3>
                     <div className="h-[19rem] grid grid-cols-3 grid-rows-3 rounded-2xl">
                         {iconsFrontend.map((skill,index) => (
@@ -57,7 +57,7 @@ const Skills = () => {
                         ))}
                     </div>
                 </section>
-                <section className="lg:w-[40%] h-[20rem] lg:h-[24rem] text-center rounded-2xl mt-6 p-3 shadow-inner shadow-Dark-orange-personal">
+                <section className="lg:w-[40%] h-[20rem] lg:h-[24rem] text-center rounded-2xl mt-6 p-3 shadow-inner-md hover:shadow-inner-hover">
                     <h3 className="h-[3rem]">Backend</h3>
                     <div className="h-[19rem] grid grid-cols-3 grid-rows-3 rounded-2xl">
                         {iconsBackend.map((skill, index) => (
@@ -73,7 +73,7 @@ const Skills = () => {
                 </section>
             </div>
             <div className="lg:flex lg:justify-around">
-                <section className="bg-[#000000] lg:w-[40%] h-[20rem] lg:h-[24rem] text-center rounded-2xl mt-6 p-3 shadow-inner shadow-Dark-orange-personal">
+                <section className="bg-[#000000] lg:w-[40%] h-[20rem] lg:h-[24rem] text-center rounded-2xl mt-6 p-3 shadow-inner-md hover:shadow-inner-hover">
                     <h3 className="h-[3rem]">Herramientas</h3>
                     <div className="h-[19rem] grid grid-cols-3 grid-rows-3 rounded-2xl">
                         {iconsTools.map((skill, index) => (
@@ -87,7 +87,7 @@ const Skills = () => {
                         ))}
                     </div>
                 </section>
-                <section className="bg-[#000000] lg:w-[40%] h-[12rem] lg:h-[24rem] text-center rounded-2xl mt-6 p-3 shadow-inner shadow-Dark-orange-personal">
+                <section className="bg-[#000000] lg:w-[40%] h-[12rem] lg:h-[24rem] text-center rounded-2xl mt-6 p-3 shadow-inner-md hover:shadow-inner-hover">
                     <h3 className="h-[3rem]">Aprendiendo</h3>
                     <div className="h-[19rem] grid grid-cols-3 grid-rows-3 rounded-2xl">
                         {iconsLearning.map((skill,index) => (

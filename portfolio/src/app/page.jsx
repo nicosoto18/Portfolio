@@ -8,8 +8,6 @@ import HamburgerMenu from "./components/navBars/hamburgerMenu";
 import Banner from "./components/banner/Banner";
 import { useEffect, useRef, useState } from "react";
 import Footer from "./components/footer/Footer";
-// import { root } from "postcss";
-
 
 export default function Home() {
     const startRef = useRef(null);
@@ -29,11 +27,7 @@ export default function Home() {
 
     const scrollToSection = (ref) => {
         if (ref && ref.current) {
-            if (ref === aboutRef || ref === contactRef || ref === projectsRef) {
-                ref.current.scrollIntoView({ behavior: "smooth", block: "center" });
-            } else {
-                ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
-            }
+            ref.current.scrollIntoView({ behavior: "smooth", block: "start" });   
         } else {
             console.log("no se paso la ref");
         }
@@ -43,7 +37,7 @@ export default function Home() {
         const observerOptions = {
             root: null,
             rootMargin: '0px 0px -50% 0px',
-            threshold: 0.1,
+            threshold: 0.3,
         }
 
         const observer = new IntersectionObserver((entries) => {
@@ -95,16 +89,16 @@ export default function Home() {
                 </section>
 
                 <section className="w-[95%] lg:w-[80%] mx-auto">
-                    <section className="pt-32 lg:mt-[5rem] lg:pt-0" ref={aboutRef} id="about">
+                    <section className="pt-32 lg:pt-20" ref={aboutRef} id="about">
                         <AboutMe />
                     </section>
-                    <section className="pt-16 lg:mt-[5rem] lg:pt-0" ref={projectsRef} id="projects">
+                    <section className="pt-16 lg:pt-20" ref={projectsRef} id="projects">
                         <Projects />
                     </section>
-                    <section className="pt-16 lg:mt-[5rem] lg:pt-0" ref={skillsRef} id="skills">
+                    <section className="pt-16 lg:pt-20" ref={skillsRef} id="skills">
                         <Skills />
                     </section>
-                    <section className="pt-16 lg:mt-[5rem] lg:pt-0" ref={contactRef} id="contact">
+                    <section className="pt-16 lg:pt-20" ref={contactRef} id="contact">
                         <ContactForm />
                     </section>
                 </section>

@@ -1,10 +1,10 @@
-const InstagramIcon = () => {
+const InstagramIcon = ({size}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="icon icon-tabler icon-tabler-brand-instagram"
-      width="34"
-      height="34"
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke="#D9D9D9"

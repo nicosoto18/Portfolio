@@ -55,18 +55,18 @@ const Banner = () => {
                     <div>
                         <button
                             className="bg-Light-personal-Gray text-black font-semibold h-6 px-2 rounded-2xl  hover:bg-Dark-orange-personal hover:text-black "
-                            onClick={() => window.location.href = cvUrl}
+                            onClick={() => window.open(cvUrl)}
                         >
                             Ver Curriculum Vitae
                         </button>
                     </div>
                     <div className="w-8 flex items-center justify-center">
-                        <button onClick={() => window.location.href = linkedInUrl} onMouseEnter={()=>handleSizeIconLarge("linkedinIcon", 30)} onMouseLeave={()=>handleSizeIconSmall("linkedinIcon", 24)}>
+                        <button onClick={() => window.open(linkedInUrl)} onMouseEnter={()=>handleSizeIconLarge("linkedinIcon", 30)} onMouseLeave={()=>handleSizeIconSmall("linkedinIcon", 24)}>
                             <LinkedinIcon size={sizeIcon.linkedinIcon} />
                         </button>
                     </div>
                     <div className="w-8 flex items-center justify-center">
-                        <button onClick={() => window.location.href = githubUrl} onMouseEnter={()=>handleSizeIconLarge("githubIcon", 30)} onMouseLeave={()=>handleSizeIconSmall("githubIcon", 24)}>
+                        <button onClick={() => window.open(githubUrl)} onMouseEnter={()=>handleSizeIconLarge("githubIcon", 30)} onMouseLeave={()=>handleSizeIconSmall("githubIcon", 24)}>
                             <GithubIcon size={sizeIcon.githubIcon}/>
                         </button>
                     </div>
