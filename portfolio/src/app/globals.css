@@ -162,6 +162,19 @@ h3{
   }
 }
 
+.sectionToAppear{
+  opacity: 0;
+  animation: appear 0.7s ease-in forwards;
+}
+
+@keyframes appear{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1
+  }
+}
 
 @media(max-width:1023px){
   h1{

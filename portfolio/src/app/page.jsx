@@ -82,7 +82,7 @@ export default function Home() {
                 />
             </div>
 
-            <div className="mx-auto w-[90%]">
+            <div className="mx-auto w-[90%] sectionToAppear">
                 
                 <section className="pt-44 lg:pt-40" ref={startRef} id="start">
                     <Banner />
